@@ -7,10 +7,17 @@
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
+
+.full-width {
+  width: 100%; }
+
+.align-center {
+  text-align: center; }
 
 body {
   color: #222222;
@@ -38,7 +45,12 @@ h3 {
 a {
   color: #2BBFE4;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .3s; }
+  a:hover {
+    color: #007e9e; }
+  a:active {
+    color: #716CD8; }
 
 .wrapper {
   margin-left: auto;
@@ -58,9 +70,22 @@ a {
     .header__logo > img {
       width: 100%; }
   .header__search {
-    padding-top: .8rem;
+    padding-top: 2rem;
     float: right;
-    width: 24rem; }
+    width: 24rem;
+    position: relative;
+    box-sizing: border-box; }
+    .header__search .search__button {
+      background: url(../../img/icon-search.png) center center no-repeat;
+      position: absolute;
+      background-size: contain;
+      top: 47%;
+      left: 1rem;
+      width: 2rem;
+      height: 2rem;
+      z-index: 2; }
+    .header__search .search__input {
+      padding-left: 3.8rem; }
 
 input {
   background-color: #FFF;
@@ -84,3 +109,98 @@ input {
     transition: all .3s; }
     .main-nav__link:hover, .main-nav__link:active {
       color: #FFF; }
+
+.page-title {
+  margin: 3rem 0 2.5rem; }
+
+.checkout {
+  width: 58%;
+  float: left; }
+
+.order-summary {
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+  float: left;
+  width: 42%;
+  padding: 4rem; }
+  .order-summary .order-summary__header {
+    position: relative;
+    margin-bottom: 2rem; }
+  .order-summary .order-summary__text {
+    display: inline-block; }
+  .order-summary a.link--edit::before {
+    content: "Edit";
+    width: 4rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    top: 20%;
+    position: absolute;
+    padding-left: 2rem; }
+  .order-summary .order-summary__items {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem; }
+    .order-summary .order-summary__items .item:not(:last-child) {
+      margin-bottom: 2rem; }
+    .order-summary .order-summary__items .item {
+      width: 100%;
+      height: 8.3rem; }
+      .order-summary .order-summary__items .item__thumb-wrap {
+        float: left;
+        width: 5rem; }
+        .order-summary .order-summary__items .item__thumb-wrap > img {
+          width: 100%; }
+      .order-summary .order-summary__items .item__info {
+        padding-top: 1rem;
+        float: left;
+        width: 50%;
+        padding-left: 2rem;
+        list-style: none; }
+        .order-summary .order-summary__items .item__info > * {
+          padding-bottom: .3rem; }
+      .order-summary .order-summary__items .item__title {
+        font-size: 1.6rem;
+        font-weight: 700; }
+      .order-summary .order-summary__items .item__type {
+        font-size: 1.4rem;
+        color: #AAAAAA; }
+      .order-summary .order-summary__items .item__options {
+        font-size: 1.4rem; }
+        .order-summary .order-summary__items .item__options > *:first-child {
+          padding-right: 1rem;
+          margin-right: 1rem;
+          border-right: 1px solid #DDDDDD; }
+      .order-summary .order-summary__items .item__price {
+        font-size: 1.6rem;
+        padding-top: 1rem;
+        float: right; }
+  .order-summary__total {
+    margin: 2rem 0;
+    list-style: none;
+    font-size: 1.6rem; }
+  .order-summary__line > span:last-child {
+    float: right; }
+  .order-summary__line:not(:last-child) {
+    margin-bottom: 1.5rem; }
+  .order-summary__line--main {
+    font-weight: 700; }
+  .order-summary > button {
+    margin-top: 2.4rem; }
+
+.divider {
+  width: 100%;
+  background-color: #DDDDDD;
+  height: 1px;
+  display: block; }
+
+.btn {
+  font-size: 1.6rem;
+  cursor: pointer; }
+  .btn--primary-inverse {
+    border: 1px solid #716CD8;
+    color: #716CD8;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    transition: all .2s ease-in-out; }
+    .btn--primary-inverse:hover {
+      background-color: #716CD8;
+      color: #fff; }

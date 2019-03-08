@@ -13,8 +13,25 @@
    }
 
    &__search {
-      padding-top: .8rem;
+      padding-top: 2rem;
       float: right;
       width: 24rem;
+      position: relative;
+      box-sizing: border-box;
+
+      .search__button {
+         background: url(../../img/icon-search.png) center center no-repeat;
+         position: absolute;
+         background-size: contain;
+         top: 47%;
+         left: 1rem;
+         width: 2rem;
+         height: 2rem;
+         z-index: 2;
+      }
+
+      .search__input {
+         padding-left: 3.8rem;
+      }
    }
 }

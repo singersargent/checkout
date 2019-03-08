@@ -21,7 +21,6 @@
    
          <form action="" class="header__search">
             <button class="search__button">
-               <i class="fa fa-search"></i>
             </button>
    
             <input type="text" class="search__input" placeholder="Search">
@@ -46,161 +45,163 @@
    </header>
 
    <div class="wrapper">
-         <div class="page-title">
-               <h2>Checkout</h2>
+      <div class="page-title">
+         <h2>Checkout</h2>
+      </div>
+         
+      <main class="checkout">
+         <section class="checkout__shipping">
+            <div class="checkout__step-header">
+               <div class="checkout__step-number">1</div>
+               <h3 class="checkout__step-name">Shipping Address</h3>
+               <a class="link--edit"></a>
+            </div>
+
+            <div class="checkout__address-shipping">
+               <p>Jayden Zimmerman</p>
+               <p>969 Blick Mission Apt. 438</p>
+               <p>Maximilliafort</p>
+               <p>Qatar</p>
+            </div>
+
+            <div class="checkout__address-email">
+               <p>morar_annie@violet.com</p>
+            </div>
+         </section>
+
+         <div class="divider"></div>
+   
+         <section class="checkout__payment">
+            <div class="checkout__step-header">
+               <div class="checkout__step-number">2</div>
+               <h3 class="checkout__step-name">Shipping Address</h3>
+               <a class="link--edit"></a>
+            </div>
+
+            <form action="" class="form checkout__payment-form">
+               <div class="form__radio-group">
+                  <input id="card" type="radio" class="form__radio-input">
+                  <label for="card" class="form__radio-label">Card</label>
+               </div>
+
+               <div class="form__radio-group">
+                  <input id="paypal" type="radio" class="form__radio-input">
+                  <label for="paypal" class="form__radio-label">
+                     <img src="img/payment-paypal.png" alt="paypal" class="form__radio-label--paypal">
+                  </label>
+               </div>
+
+               <div class="form__group">
+                  <input name="name-on-card" type="text" class="form__input" placeholder="Name on Card">
+               </div>
+               
+               <div class="form__group">
+                  <input name="card-number" type="text" class="form__input" placeholder="Card Number" value="1234 5678 9123">
+                  <span class="form__card-type"></span>
+               </div>
+
+               <div class="form__group--half-width">
+                  <input name="cvv-number" type="text" class="form__input" placeholder="CCV">
+               </div>
+
+               <div class="form__group--half-width">
+                  <input name="expiration-date" type="text" class="form__input" placeholder="Expiration Date">
+               </div>
+            </form>
+         </section>
+
+         <div class="divider"></div>
+
+         <div class="checkout__cta">
+            <button class="btn btn--primary full-width">Purchase (4 Items) $42.20</button>
+            <p class="legal align-center">
+                  By placing your order, you agree to shelbybooks.com's <a href="#">conditions of use</a>.
+            </p>
          </div>
          
-         <main class="checkout">
-            <section class="checkout__shipping">
-               <div class="checkout__step-header">
-                  <div class="checkout__step-number">1</div>
-                  <h3 class="checkout__step-name">Shipping Address</h3>
-                  <a class="link--edit"></a>
+      </main>
+   
+      <aside class="order-summary">
+         <section class="order-summary__header">
+            <h3 class="order-summary__text">Order Summary</h3>
+            <a class="link--edit"></a>
+         </section>
+
+         <div class="divider"></div>
+
+         <section class="order-summary__items">
+            <div class="item">
+               <div class="item__thumb-wrap">
+                  <img src="img/bookcover-americanPsycho.jpg" alt="" class="item__thumb">
                </div>
 
-               <div class="checkout__address-shipping">
-                  <p>Jayden Zimmerman</p>
-                  <p>969 Blick Mission Apt. 438</p>
-                  <p>Maximilliafort</p>
-                  <p>Qatar</p>
-               </div>
+               <ul class="item__info">
+                  <li class="item__title">American Psycho</li>
+                  <li class="item__type">kindle e-book</li>
+                  <li class="item__options">
+                     <a href="#">delete</a><a href="#">save for later</a>
+                  </li>
+               </ul>
 
-               <div class="checkout__address-email">
-                  <p>morar_annie@violet.com</p>
-               </div>
-            </section>
-
-            <div class="divider"></div>
-      
-            <section class="checkout__payment">
-               <div class="checkout__step-header">
-                  <div class="checkout__step-number">2</div>
-                  <h3 class="checkout__step-name">Shipping Address</h3>
-                  <a class="link--edit"></a>
-               </div>
-
-               <form action="" class="form checkout__payment-form">
-                  <div class="form__radio-group">
-                     <input id="card" type="radio" class="form__radio-input">
-                     <label for="card" class="form__radio-label">Card</label>
-                  </div>
-
-                  <div class="form__radio-group">
-                     <input id="paypal" type="radio" class="form__radio-input">
-                     <label for="paypal" class="form__radio-label">
-                        <img src="img/payment-paypal.png" alt="paypal" class="form__radio-label--paypal">
-                     </label>
-                  </div>
-
-                  <div class="form__group">
-                     <input name="name-on-card" type="text" class="form__input" placeholder="Name on Card">
-                  </div>
-                  
-                  <div class="form__group">
-                     <input name="card-number" type="text" class="form__input" placeholder="Card Number" value="1234 5678 9123">
-                     <span class="form__card-type"></span>
-                  </div>
-
-                  <div class="form__group--half-width">
-                     <input name="cvv-number" type="text" class="form__input" placeholder="CCV">
-                  </div>
-
-                  <div class="form__group--half-width">
-                     <input name="expiration-date" type="text" class="form__input" placeholder="Expiration Date">
-                  </div>
-               </form>
-            </section>
-
-            <div class="divider"></div>
-
-            <div class="checkout__cta">
-               <button class="btn btn--primary full-width">Purchase (4 Items) $42.20</button>
-               <p class="legal align-center">
-                     By placing your order, you agree to shelbybooks.com's <a href="#">conditions of use</a>.
-               </p>
+               <p class="item__price">$12.99</p>
             </div>
-            
-         </main>
-      
-         <aside class="order-summary">
-            <section class="order-summary__header">
-               <h3 class="order-summary__text">Order Summary</h3>
-               <a class="link--edit"></a>
-            </section>
 
-            <section class="order-summary__items">
-               <div class="item">
-                  <div class="item__thumb-wrap">
-                     <img src="img/bookcover-americanPsycho.jpg" alt="" class="item__thumb">
-                  </div>
-
-                  <ul class="item__info">
-                     <li class="item__title">American Psycho</li>
-                     <li class="item__type">kindle e-book</li>
-                     <li class="item__options">
-                        <a href="#">delete</a><a href="#">save for later</a>
-                     </li>
-                  </ul>
-
-                  <p class="item__price">$12.99</p>
+            <div class="item">
+               <div class="item__thumb-wrap">
+                  <img src="img/bookcover-annihilation.jpg" alt="" class="item__thumb">
                </div>
 
-               <div class="item">
-                  <div class="item__thumb-wrap">
-                     <img src="img/bookcover-annihilation.jpg" alt="" class="item__thumb">
-                  </div>
+               <ul class="item__info">
+                  <li class="item__title">Annihilation</li>
+                  <li class="item__type">kindle e-book</li>
+                  <li class="item__options">
+                     <a href="#">delete</a><a href="#">save for later</a>
+                  </li>
+               </ul>
 
-                  <ul class="item__info">
-                     <li class="item__title">Annihilation</li>
-                     <li class="item__type">kindle e-book</li>
-                     <li class="item__options">
-                        <a href="#">delete</a><a href="#">save for later</a>
-                     </li>
-                  </ul>
+               <p class="item__price">$9.53</p>
+            </div>
 
-                  <p class="item__price">$9.53</p>
+            <div class="item">
+               <div class="item__thumb-wrap">
+                  <img src="img/bookcover-harryPotter.jpg" alt="" class="item__thumb">
                </div>
 
-               <div class="item">
-                  <div class="item__thumb-wrap">
-                     <img src="img/bookcover-harryPotter.jpg" alt="" class="item__thumb">
-                  </div>
+               <ul class="item__info">
+                  <li class="item__title">Harry Potter</li>
+                  <li class="item__type">kindle e-book</li>
+                  <li class="item__options">
+                     <a href="#">delete</a><a href="#">save for later</a>
+                  </li>
+               </ul>
 
-                  <ul class="item__info">
-                     <li class="item__title">Harry Potter</li>
-                     <li class="item__type">kindle e-book</li>
-                     <li class="item__options">
-                        <a href="#">delete</a><a href="#">save for later</a>
-                     </li>
-                  </ul>
+               <p class="item__price">$8.78</p>
+            </div>
+         </section>
 
-                  <p class="item__price">$8.78</p>
-               </div>
-            </section>
+         <div class="divider"></div>
 
-            <div class="divider"></div>
+         <ul class="order-summary__total">
+            <li class="order-summary__line">
+               <span>Items(4):</span>
+               <span>$41.38</span>
+            </li>
 
-            <ul class="order-summary__total">
-               <li class="order-summary__line">
-                  <span>Items(4):</span>
-                  <span>$41.38</span>
-               </li>
+            <li class="order-summary__line">
+               <span>Estimated Tax:</span>
+               <span>$0.82</span>
+            </li>
 
-               <li class="order-summary__line">
-                  <span>Estimated Tax:</span>
-                  <span>$0.82</span>
-               </li>
+            <li class="order-summary__line order-summary__line--main">
+               <span>Total:</span>
+               <span>$42.20</span>
+            </li>
+         </ul>
 
-               <li class="order-summary__line--main">
-                  <span>Total:</span>
-                  <span>$42.20</span>
-               </li>
-            </ul>
+         <div class="divider"></div>
 
-            <div class="divider"></div>
-
-            <button class="btn--primary-inverse full-width">Add Gift Code or Promotional Code</button>
-         </aside>
+         <button class="btn btn--primary-inverse full-width">Add Gift Code or Promotional Code</button>
+      </aside>
    </div>
    
 

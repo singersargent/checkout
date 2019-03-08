@@ -1,0 +1,17 @@
+.btn {
+   font-size: 1.6rem;
+   cursor: pointer;
+
+   &--primary-inverse {
+      border: 1px solid $color-primary;
+      color: $color-primary;
+      padding-top: 1.6rem;
+      padding-bottom: 1.6rem;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+         background-color: $color-primary;
+         color: #fff;
+      }
+   }
+}

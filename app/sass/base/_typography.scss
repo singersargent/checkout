@@ -28,4 +28,13 @@ a {
    color: $color-secondary;
    text-decoration: none;
    cursor: pointer;
+   transition: all .3s;
+
+   &:hover {
+      color: $color-secondary-dark;
+   }
+
+   &:active {
+      color: $color-primary;
+   }
 }

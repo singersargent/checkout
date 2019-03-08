@@ -9,8 +9,17 @@
    font-size: 100%;
    vertical-align: baseline;
    background: transparent;
+   box-sizing: border-box;
 }
 
 html {
    font-size: 62.5%;
+}
+
+.full-width {
+   width: 100%;
+}
+
+.align-center {
+   text-align: center;
 }
