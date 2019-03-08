@@ -1,0 +1,20 @@
+.header {
+   background-color: $color-black;
+   height: 8rem;
+
+   &__logo {
+      padding-top: 2.5rem;
+      width: 27.5rem;
+      float: left;
+
+      & > img {
+         width: 100%;
+      }
+   }
+
+   &__search {
+      padding-top: .8rem;
+      float: right;
+      width: 24rem;
+   }
+}

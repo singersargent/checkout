@@ -1,0 +1,25 @@
+.main-nav {
+   float: right;
+   padding-right: 5rem;
+   padding-top: 3rem;
+
+   &__list {
+      list-style: none;
+   }
+
+   &__item {
+      float: right;
+      padding-left: 3rem; 
+   }
+
+   &__link {
+      font-size: 1.6rem;
+      color: $color-grey-light;
+      font-weight: 700;
+      transition: all .3s;
+
+      &:hover, &:active {
+         color: #FFF;
+      }
+   }
+}
