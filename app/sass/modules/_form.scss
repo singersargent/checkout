@@ -3,6 +3,13 @@ input {
    padding: 1rem 2rem 1.2rem;
    font-size: 1.6rem;
    width: 100%;
+   border: 1px solid $color-grey-light;
+   box-shadow: none;
+   transition: all .3s;
+
+   &:focus {
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+   }
 }
 
 .form {
@@ -10,6 +17,7 @@ input {
    &__radio-group {
       float: left;
       margin-right: 4rem;
+      margin-bottom: 2rem;
    }
 
    &__radio-input {
@@ -53,5 +61,14 @@ input {
          width: 1.3rem;
       }
 
-
+   &__group {
+      margin-right: 6rem;
+      margin-bottom: 1.5rem;
+      
+      &--half-width {
+         float: left;
+         width: 43%;
+         margin-right: 1.5rem;
+      }
+   }
 }

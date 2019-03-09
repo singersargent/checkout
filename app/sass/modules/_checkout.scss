@@ -12,7 +12,7 @@
    &__step-header {
       @include clearfix;
       position: relative;
-      margin-bottom: 1.3rem;
+      margin-bottom: 2rem;
    }
 
    &__step-number {
@@ -69,6 +69,12 @@
 
    &__payment {
       margin-top: 3.5rem;
+   }
+
+   &__cta {
+      margin-top: 3rem;
+      margin-right: 6rem;
+      box-sizing: border-box;
    }
 }
 
