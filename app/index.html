@@ -52,20 +52,24 @@
       <main class="checkout">
          <section class="checkout__shipping">
             <div class="checkout__step-header">
-               <div class="checkout__step-number">1</div>
+               <div class="checkout__step-number">
+                  <span>1</span>
+               </div>
                <h3 class="checkout__step-name">Shipping Address</h3>
                <a class="link--edit"></a>
             </div>
 
-            <div class="checkout__address-shipping">
-               <p>Jayden Zimmerman</p>
-               <p>969 Blick Mission Apt. 438</p>
-               <p>Maximilliafort</p>
-               <p>Qatar</p>
-            </div>
-
-            <div class="checkout__address-email">
-               <p>morar_annie@violet.com</p>
+            <div class="checkout__content">
+               <div class="checkout__address-shipping">
+                  <p>Jayden Zimmerman</p>
+                  <p>969 Blick Mission Apt. 438</p>
+                  <p>Maximilliafort</p>
+                  <p>Qatar</p>
+               </div>
+   
+               <div class="checkout__address-email">
+                  <p>morar_annie@violet.com</p>
+               </div>
             </div>
          </section>
 
@@ -73,41 +77,49 @@
    
          <section class="checkout__payment">
             <div class="checkout__step-header">
-               <div class="checkout__step-number">2</div>
+               <div class="checkout__step-number">
+                  <span>2</span>
+               </div>
                <h3 class="checkout__step-name">Shipping Address</h3>
                <a class="link--edit"></a>
             </div>
 
-            <form action="" class="form checkout__payment-form">
-               <div class="form__radio-group">
-                  <input id="card" type="radio" class="form__radio-input">
-                  <label for="card" class="form__radio-label">Card</label>
-               </div>
-
-               <div class="form__radio-group">
-                  <input id="paypal" type="radio" class="form__radio-input">
-                  <label for="paypal" class="form__radio-label">
-                     <img src="img/payment-paypal.png" alt="paypal" class="form__radio-label--paypal">
-                  </label>
-               </div>
-
-               <div class="form__group">
-                  <input name="name-on-card" type="text" class="form__input" placeholder="Name on Card">
-               </div>
-               
-               <div class="form__group">
-                  <input name="card-number" type="text" class="form__input" placeholder="Card Number" value="1234 5678 9123">
-                  <span class="form__card-type"></span>
-               </div>
-
-               <div class="form__group--half-width">
-                  <input name="cvv-number" type="text" class="form__input" placeholder="CCV">
-               </div>
-
-               <div class="form__group--half-width">
-                  <input name="expiration-date" type="text" class="form__input" placeholder="Expiration Date">
-               </div>
-            </form>
+           <div class="checkout__content">
+               <form action="" class="form checkout__payment-form">
+                  <div class="form__radio-group">
+                     <input name="payment-option" id="card" type="radio" class="form__radio-input">
+                     <label for="card" class="form__radio-label">
+                        <span class="form__radio-button"></span>
+                        Card
+                     </label>
+                  </div>
+   
+                  <div class="form__radio-group">
+                     <input name="payment-option" id="paypal" type="radio" class="form__radio-input">
+                     <label for="paypal" class="form__radio-label">
+                        <span class="form__radio-button"></span>
+                        <img src="img/payment-paypal.png" alt="paypal" class="form__radio-label--paypal">
+                     </label>
+                  </div>
+   
+                  <div class="form__group">
+                     <input name="name-on-card" type="text" class="form__input" placeholder="Name on Card">
+                  </div>
+                  
+                  <div class="form__group">
+                     <input name="card-number" type="text" class="form__input" placeholder="Card Number" value="1234 5678 9123">
+                     <span class="form__card-type"></span>
+                  </div>
+   
+                  <div class="form__group--half-width">
+                     <input name="cvv-number" type="text" class="form__input" placeholder="CCV">
+                  </div>
+   
+                  <div class="form__group--half-width">
+                     <input name="expiration-date" type="text" class="form__input" placeholder="Expiration Date">
+                  </div>
+               </form>
+           </div>
          </section>
 
          <div class="divider"></div>

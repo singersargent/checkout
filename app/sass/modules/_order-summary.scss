@@ -14,16 +14,6 @@
       display: inline-block;
    }
 
-   a.link--edit::before {
-      content: "Edit";
-      width: 4rem;
-      display: inline-block;
-      font-size: 1.4rem;
-      top: 20%;
-      position: absolute;
-      padding-left: 2rem;
-   }
-
    .order-summary__items {
       margin-top: 2.5rem;
       margin-bottom: 2.5rem;
